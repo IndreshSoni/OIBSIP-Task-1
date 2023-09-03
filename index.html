@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Rolls-Royce Website Landing Page</title>
+</head>
+<body>
+    <section>
+        <div class="background"></div>
+        <header>
+            <a href="#"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="container">
+            <div class="text-box">
+                <h2>It's not just a Car, <br>It's  <span>Rolls-Royce </span></h2>
+                <p>A Rolls-Royce is more than a motor car. It is a work of art, hand-made to order exclusively for you, by our team of highly skilled craftspeople and designers. Whatever you imagine your ideal motor car to be, bring your unique vision to life with Rolls-Royce Bespoke. Approximately 65 per cent of all Rolls-Royce cars ever built are still on the road today.</p>
+                <a href="3">Learn More</a>
+            </div>
+            <div class="img-box">
+                <img src="img2.png" class="Rolls-Royce" alt="">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb-2.png" onclick="imgSlider('img2.png');changebackgroundColor('#B59410')"></li>
+            <li><img src="thumb-4.png" onclick="imgSlider('img3.png');changebackgroundColor('RGB(173,165,135)')"></li>
+            <li><img src="thumb-3.png" onclick="imgSlider('img1.png');changebackgroundColor('#90EE90')"></li>
+        </ul>
+        <ul class="social">
+            <li><a href="#"><img src="fb.png"></a></li>
+            <li><a href="#"><img src="ig.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.Rolls-Royce').src=anything;
+        }
+        function changebackgroundColor(color){
+            const background = document.querySelector('.background');
+            background.style.background = color;
+        }
+    </script>
+</body>
+</html>
